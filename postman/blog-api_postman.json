@@ -1,0 +1,164 @@
+{
+    "info": {
+        "name": "django",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "users",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/users",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1:8000"
+                    ],
+                    "path": [
+                        "users"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "basic",
+                    "basic": {
+                        "username": "super",
+                        "password": "super123"
+                    }
+                }
+            }
+        },
+        {
+            "name": "user",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/users/3",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1:8000"
+                    ],
+                    "path": [
+                        "users",
+                        "3"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "basic",
+                    "basic": {
+                        "username": "super",
+                        "password": "super123"
+                    }
+                }
+            }
+        },
+        {
+            "name": "add user",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/users/",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1:8000"
+                    ],
+                    "path": [
+                        "users"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"username\": \"meo\",\n  \"email\": \"meo@meo.com\"\n}"
+                },
+                "auth": {
+                    "type": "basic",
+                    "basic": {
+                        "username": "super",
+                        "password": "super123"
+                    }
+                }
+            }
+        },
+        {
+            "name": "change user",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/users/4/",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1:8000"
+                    ],
+                    "path": [
+                        "users",
+                        "4"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"id\": 4,\n  \"username\": \"meo_meo\",\n  \"email\": \"meo@meo.com\"\n}"
+                },
+                "auth": {
+                    "type": "basic",
+                    "basic": {
+                        "username": "super",
+                        "password": "super123"
+                    }
+                }
+            }
+        },
+        {
+            "name": "delete user",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/users/4/",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1:8000"
+                    ],
+                    "path": [
+                        "users",
+                        "4"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "basic",
+                    "basic": {
+                        "username": "super",
+                        "password": "super123"
+                    }
+                }
+            }
+        }
+    ]
+}
