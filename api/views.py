@@ -1,4 +1,4 @@
-# from xml.etree.ElementTree import Comment  # @CHANGE
+# from xml.etree.ElementTree import Comment
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from rest_framework import permissions
@@ -14,7 +14,7 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all().order_by('-date_joined')
     serializer_class = UserSerializer
     #REQUISITO: AUTENTICAZIONE
-    permission_classes = [permissions.IsAuthenticated]  # @CHANGE
+    permission_classes = [permissions.IsAuthenticated]
 
 
 class PostViewSet(viewsets.ModelViewSet):
